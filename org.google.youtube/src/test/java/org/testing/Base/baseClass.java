@@ -25,6 +25,7 @@ public class baseClass {
 	@BeforeMethod
 	public void bMethod() throws IOException
 	{
+		System.out.println("I am base method");
 		WebDriverManager.chromedriver().setup();
 		ChromeOptions o = new ChromeOptions();
 		o.addArguments("--disable-notifications");
